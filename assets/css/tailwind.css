@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Play;
+  width: 100%;
+  @apply bg-[#0d0d0d];
+}
+
+@layer components {
+  /* ------------- Index Page ------------- */
+  .custom-container {
+    @apply w-[100vw] h-[100vh];
+    @apply overflow-x-hidden; 
+    @apply flex flex-col;
+    @apply lg:flex-row;
+    @apply items-center;
+    @apply lg:items-baseline;
+  }
+  .navbar {
+    @apply flex justify-center;
+    @apply lg:w-1/2;
+    @apply pt-24;
+  }
+  .custom-container .contain {
+    @apply flex flex-col;
+    @apply justify-normal;
+    @apply w-5/6;
+    @apply md:w-2/3;
+    @apply lg:w-1/2;
+  }
+  .contain section {
+    @apply flex;
+    @apply pt-20;
+    @apply lg:pt-24;
+  }
+  /* -------------------------------------- */
+  /* ---------- NavBar Component ---------- */
+  .navbar-container {
+    @apply flex;
+    @apply flex-row; 
+    @apply lg:flex-col;
+    @apply lg:fixed;
+  }
+  .title-container{
+    @apply lg:pl-40;
+    @apply lg:mb-12;
+  }
+  .title-portfolio {
+    @apply text-[rgb(220,215,201)] text-5xl font-bold;
+    @apply mb-2;
+  }
+  .title-portfolio span {
+    @apply text-[#3F4E4F];
+  }
+  .title-container p {
+    @apply text-[#3F4E4F] text-sm font-bold capitalize;
+    @apply pl-2;
+  }
+  .title-container p span {
+    @apply text-[#DCD7C9];
+  }
+  #social-icons-mobile {
+    @apply flex;
+    @apply sm:hidden;
+    @apply pt-6;
+  }
+  .sub-menu {
+    @apply hidden;
+    @apply sm:flex;
+    @apply sm:flex-col;
+    @apply pl-32;
+  }
+  /* -------------------------------------- */
+  /* ----------- Menu Component ----------- */
+  .menu-container {
+    @apply flex justify-evenly;
+    @apply items-start;
+    @apply text-center;
+  }
+  #primary_nav {
+    @apply block;
+    @apply mt-0;
+    @apply lg:mt-14;
+  }
+  .nav-btn {
+    @apply border border-[#3F4E4F];
+    @apply text-[#3F4E4F];
+    @apply hover:text-[#DCD7C9] hover:border-[#DCD7C9] hover:scale-110 duration-300;
+  }
+  .nav-link {
+    @apply  bg-[#3F4E4F];
+    @apply text-[#0d0d0d] uppercase;
+    @apply hover:text-[#DCD7C9] hover:bg-[#2C3639] hover:bg-opacity-20 hover:duration-500 ;
+  }
+  #social-icons {
+    @apply flex justify-center;
+    @apply ml-7;
+    @apply lg:mt-48;
+  }
+  .social-link {
+      @apply flex;
+  }
+  /* -------------------------------------- */
+  /* ---------- About Component ----------- */
+  .about-container {
+    @apply flex flex-col;
+    @apply w-full;
+    @apply lg:w-2/3;
+    @apply items-center;
+    @apply md:items-start;
+  }
+  .about-container h2 {
+    @apply text-[#3F4E4F] text-xl font-bold uppercase pl-2;
+  }
+  .about-container p {
+    @apply text-justify text-[#fff] text-base font-[300];
+    @apply px-2 py-4;
+  }
+  /* -------------------------------------- */
+  /* --------- Project Component ---------- */
+  .projects-container {
+    @apply flex;
+    @apply flex-col;
+    @apply items-center;
+    @apply md:items-start;
+  }
+  .projects-container h2 {
+    @apply text-[#3F4E4F] text-xl font-bold uppercase;
+    @apply pl-2;
+  }
+  .project-card {
+    @apply flex;
+    @apply flex-col;
+    @apply lg:flex-row;
+    @apply p-4 my-4; 
+    @apply duration-500;
+    @apply items-center;
+    @apply md:items-start;
+    @apply w-5/6;
+  }
+  .project-card img {
+    @apply mr-6 pt-2;
+  }
+  .project-card video {
+    @apply mr-6 pt-2;
+  }
+  .project-description {
+    @apply flex flex-col;
+  }
+  .project-description h3 {
+    @apply text-[#3F4E4F] text-lg font-bold;
+    @apply my-4;
+  }
+  .project-description .text-description {
+    @apply w-3/4;
+    @apply md:w-full;
+  }
+  .project-description p {
+    @apply text-[#DCD7C9] text-sm;
+    @apply flex-col;
+    @apply items-center;
+    @apply text-justify;
+  }
+  .project-description p span {
+    @apply text-[#3F4E4F];
+  }
+  .project-description div {
+    @apply flex flex-row;
+    @apply text-sm font-thin;
+    @apply mt-4;
+  }
+  .project-description div p {
+    @apply text-center;
+    @apply pr-5;
+    @apply text-[#DCD7C9]
+  }
+  /* -------------------------------------- */
+   /* ----------- Menu Component ----------- */
+
+  /* -------------------------------------- */
+}
+
+@layer utilities {}
