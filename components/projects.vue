@@ -194,4 +194,12 @@ export default {
   opacity: 1; /* Visible au survol */
 }
 
+.project-card video::-webkit-media-controls-panel {
+  display: none !important;
+}
+
+.project-card video::-webkit-media-controls-play-button {
+  display: none !important;
+
+}
 </style>
