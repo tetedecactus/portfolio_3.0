@@ -5,7 +5,7 @@
     <div class="project-card">
       <video width="150" autoplay loop muted playsinline>
         <source src="../assets/images/rb_portfolio.mp4" type="video/mp4">
-        <!-- <source src="../assets/images/rb_portfolio.webm" type="video/webm"> -->
+        <source src="../assets/images/rb_portfolio.webm" type="video/webm">
       </video>
       <div class="project-description">
           <h3>Portfolio 1.0</h3>
@@ -20,7 +20,7 @@
     <div class="project-card">
       <video width="150" autoplay loop muted playsinline>
         <source src="../assets/images/transcendence.mp4" type="video/mp4">
-        <!-- <source src="../assets/images/transcendence.webm" type="video/webm"> -->
+        <source src="../assets/images/transcendence.webm" type="video/webm">
       </video>
       <div class="project-description">
           <h3>Transcendence</h3>
@@ -50,8 +50,8 @@
     <div class="project-card">
       <video width="150" autoplay loop muted playsinline>
         <source src="../assets/images/EastClaw.mp4" type="video/mp4">
+        <source src="../assets/images/EastClaw.webm" type="video/webm">
         <!-- <source src="../assets/images/EastClaw.ogg" type="video/ogg"> -->
-        <!-- <source src="../assets/images/EastClaw.webm" type="video/webm"> -->
       </video>
       <div class="project-description">
           <h3>Site Web Free Lance</h3>
@@ -68,7 +68,7 @@
     <div class="project-card">
       <video width="150" autoplay loop muted playsinline>
         <source src="../assets/images/joe_portfolio.mp4" type="video/mp4">
-        <!-- <source src="../assets/images/joe_portfolio.webm" type="video/webm"> -->
+        <source src="../assets/images/joe_portfolio.webm" type="video/webm">
       </video>
       <div class="project-description">
           <h3>Pro Bono Portfolio</h3>
@@ -85,8 +85,9 @@
     <div class="project-card">
       <video width="150" autoplay loop muted playsinline>
         <source src="../assets/images/portfolio2-0.mp4" type="video/mp4">
+        <source src="../assets/images/portfolio2-0.webm" type="video/webm">
+        <source src="../assets/images/portfolio2-0.ogv" type="video/ogg">
         <!-- <source src="../assets/images/porfolio2-0.ogv" type="video/ogg"> -->
-        <!-- <source src="../assets/images/portfolio2-0.webm" type="video/webm"> -->
       </video>
       <div class="project-description">
           <h3>Portfolio 2.0</h3>
@@ -103,29 +104,7 @@
 
 <script>
 export default {
-  // mounted() {
-  //   // Code qui dépend du DOM
-  //   var video = document.querySelector('video');
-  //   var options = {
-  //     root: null, // Utilisez la fenêtre de visualisation comme racine
-  //     rootMargin: '0px',
-  //     threshold: 0.1, // Déclenche lorsque 10 % de la vidéo est visible
-  //   };
 
-  //   function handleIntersection(entries, observer) {
-  //     entries.forEach(function (entry) {
-  //       if (entry.isIntersecting) {
-  //         // Commencez à charger la vidéo
-  //         video.load();
-  //         // Désabonnez-vous des événements d'intersection supplémentaires
-  //         observer.unobserve(video);
-  //       }
-  //     });
-  //   }
-
-  //   var observer = new IntersectionObserver(handleIntersection, options);
-  //   observer.observe(video);
-  // },
 };
 </script>
 
