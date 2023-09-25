@@ -3,7 +3,7 @@
     <h2>Projets</h2>
     <!-- 1er Projet -->
     <div class="project-card">
-      <video width="150" autoplay="" loop="" controls poster="../assets/images/rb_portfolio.mp4">
+      <video width="150" autoplay loop muted playsinline>
         <source src="../assets/images/rb_portfolio.mp4" type="video/mp4">
         <!-- <source src="../assets/images/rb_portfolio.webm" type="video/webm"> -->
       </video>
@@ -18,7 +18,7 @@
     </div>
     <!-- 2iem Projet -->
     <div class="project-card">
-      <video width="150" autoplay="" loop="" controls poster="../assets/images/transcendence.mp4">
+      <video width="150" autoplay loop muted playsinline>
         <source src="../assets/images/transcendence.mp4" type="video/mp4">
         <!-- <source src="../assets/images/transcendence.webm" type="video/webm"> -->
       </video>
@@ -48,8 +48,9 @@
     </div>
     <!-- 4iem Projet -->
     <div class="project-card">
-      <video width="150" autoplay="" loop="" controls poster="../assets/images/EastClaw.mp4">
+      <video width="150" autoplay loop muted playsinline>
         <source src="../assets/images/EastClaw.mp4" type="video/mp4">
+        <!-- <source src="../assets/images/EastClaw.ogg" type="video/ogg"> -->
         <!-- <source src="../assets/images/EastClaw.webm" type="video/webm"> -->
       </video>
       <div class="project-description">
@@ -65,7 +66,7 @@
     </div>
     <!-- 5iem Projet -->
     <div class="project-card">
-      <video width="150" autoplay="" loop="" controls poster="../assets/images/joe_portfolio.mp4">
+      <video width="150" autoplay loop muted playsinline>
         <source src="../assets/images/joe_portfolio.mp4" type="video/mp4">
         <!-- <source src="../assets/images/joe_portfolio.webm" type="video/webm"> -->
       </video>
@@ -82,8 +83,9 @@
     </div>
     <!-- 6iem Projet -->
     <div class="project-card">
-      <video width="150" autoplay="" loop="" controls poster="../assets/images/portfolio2-0.mp4">
+      <video width="150" autoplay loop muted playsinline>
         <source src="../assets/images/portfolio2-0.mp4" type="video/mp4">
+        <!-- <source src="../assets/images/porfolio2-0.ogv" type="video/ogg"> -->
         <!-- <source src="../assets/images/portfolio2-0.webm" type="video/webm"> -->
       </video>
       <div class="project-description">
@@ -101,29 +103,29 @@
 
 <script>
 export default {
-  mounted() {
-    // Code qui dépend du DOM
-    var video = document.querySelector('video');
-    var options = {
-      root: null, // Utilisez la fenêtre de visualisation comme racine
-      rootMargin: '0px',
-      threshold: 0.1, // Déclenche lorsque 10 % de la vidéo est visible
-    };
+  // mounted() {
+  //   // Code qui dépend du DOM
+  //   var video = document.querySelector('video');
+  //   var options = {
+  //     root: null, // Utilisez la fenêtre de visualisation comme racine
+  //     rootMargin: '0px',
+  //     threshold: 0.1, // Déclenche lorsque 10 % de la vidéo est visible
+  //   };
 
-    function handleIntersection(entries, observer) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          // Commencez à charger la vidéo
-          video.load();
-          // Désabonnez-vous des événements d'intersection supplémentaires
-          observer.unobserve(video);
-        }
-      });
-    }
+  //   function handleIntersection(entries, observer) {
+  //     entries.forEach(function (entry) {
+  //       if (entry.isIntersecting) {
+  //         // Commencez à charger la vidéo
+  //         video.load();
+  //         // Désabonnez-vous des événements d'intersection supplémentaires
+  //         observer.unobserve(video);
+  //       }
+  //     });
+  //   }
 
-    var observer = new IntersectionObserver(handleIntersection, options);
-    observer.observe(video);
-  },
+  //   var observer = new IntersectionObserver(handleIntersection, options);
+  //   observer.observe(video);
+  // },
 };
 </script>
 
