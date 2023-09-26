@@ -15,9 +15,12 @@
     "@tailwindcss/container-queries": "^0.1.1",
     "@types/node": "^18",
     "nuxt": "^3.5.0",
+    "nuxt-simple-sitemap": "^3.3.4",
     "prettier": "^3.0.1"
   },
   "dependencies": {
+    "@nuxt/http": "^0.6.4",
+    "@nuxtjs/robots": "^3.0.0",
     "jquery": "^3.7.0"
   }
 }

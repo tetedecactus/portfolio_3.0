@@ -1,10 +1,34 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
-export default defineNuxtConfig({
-	telemetry: false,
+export default {
+  telemetry: false,
   modules: [
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/robots',
+    'nuxt-simple-sitemap',
+    // '@nuxt/http',
   ],
+  site: {
+    url: 'https://olablac.com',
+  },
+  // http: {
+    // baseURL: 'https://olablac.com',
+  // },
+  'nuxt-simple-sitemap': {
+    path: '/sitemap.xml',
+    hostname: 'https://olablac.com',
+    defaults: {
+      changefreq: 'daily',
+      priority: 1,
+    },
+    routes: async () => {
+      return [
+        '/',
+        '/about',
+        '/portfolio',
+        // ...
+      ];
+    },
+  },
   googleFonts: {
     families: {
       Play: true,
@@ -16,4 +40,4 @@ export default defineNuxtConfig({
       },
     }
   }
-});
+}

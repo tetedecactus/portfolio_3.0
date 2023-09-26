@@ -86,7 +86,6 @@
       <video width="150" autoplay loop muted playsinline>
         <source src="../assets/images/portfolio2-0.mp4" type="video/mp4">
         <source src="../assets/images/portfolio2-0.webm" type="video/webm">
-        <source src="../assets/images/portfolio2-0.ogv" type="video/ogg">
         <!-- <source src="../assets/images/porfolio2-0.ogv" type="video/ogg"> -->
       </video>
       <div class="project-description">
