@@ -112,7 +112,8 @@ body {
     @apply md:items-start;
   }
   .about-container h2 {
-    @apply text-[#3F4E4F] text-xl font-bold uppercase pl-2;
+    @apply text-[#3F4E4F] text-xl font-bold uppercase;
+    @apply md:pl-2;
   }
   .about-container p {
     @apply text-justify text-[#fff] text-base font-[300];
@@ -128,7 +129,7 @@ body {
   }
   .projects-container h2 {
     @apply text-[#3F4E4F] text-xl font-bold uppercase;
-    @apply pl-2;
+    @apply md:pl-4;
   }
   .project-card {
     @apply flex;
@@ -144,13 +145,16 @@ body {
     @apply mr-6 pt-2;
   }
   .project-card video {
-    @apply mr-6 pt-2;
+    @apply pt-2;
+    @apply md:mr-6;
   }
   .project-description {
     @apply flex flex-col;
   }
   .project-description h3 {
     @apply text-[#3F4E4F] text-lg font-bold;
+    @apply text-center;
+    @apply sm:text-start;
     @apply my-4;
   }
   .project-description .text-description {
@@ -174,7 +178,7 @@ body {
   .project-description div p {
     @apply text-center;
     @apply pr-5;
-    @apply text-[#DCD7C9]
+    @apply text-[#3F4E4F]
   }
   /* -------------------------------------- */
    /* ----------- Menu Component ----------- */
