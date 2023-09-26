@@ -33,15 +33,17 @@ body {
   .contain section {
     @apply flex;
     @apply pt-20;
-    @apply lg:pt-24;
   }
   /* -------------------------------------- */
   /* ---------- NavBar Component ---------- */
   .navbar-container {
+    @apply w-full;
     @apply flex;
     @apply flex-row; 
     @apply lg:flex-col;
     @apply lg:fixed;
+    @apply items-center;
+    @apply justify-center;
   }
   .title-container{
     @apply lg:pl-40;
@@ -68,9 +70,10 @@ body {
   }
   .sub-menu {
     @apply hidden;
+    @apply mt-10;
     @apply sm:flex;
     @apply sm:flex-col;
-    @apply pl-32;
+    @apply pl-20;
   }
   /* -------------------------------------- */
   /* ----------- Menu Component ----------- */
@@ -78,6 +81,7 @@ body {
     @apply flex justify-evenly;
     @apply items-start;
     @apply text-center;
+    
   }
   #primary_nav {
     @apply block;
