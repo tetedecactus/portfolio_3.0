@@ -7,7 +7,7 @@
           <a class="nav__link" href="#projects"><p class="nav-link">projets</p></a>
           <a class="nav__link" href="#contact"><p class="nav-link">contact</p></a>
           <a :href="cv" download="Cv.pdf">
-            <p class="nav-btn">
+            <p id="cv-btn">
               DOWNLOAD C.V
           </p>
           </a>
@@ -21,6 +21,7 @@
 <script lang="js">
 import { defineComponent } from 'vue';
 import social_icons from './social_icons_link.vue'
+// import cv_component from './cv.vue'
 import cv from '../assets/images/Cv.pdf'
 
 export default defineComponent({

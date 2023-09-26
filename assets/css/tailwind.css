@@ -84,7 +84,7 @@ body {
     @apply mt-0;
     @apply lg:mt-14;
   }
-  .nav-btn {
+  #cv-btn {
     @apply border border-[#3F4E4F];
     @apply text-[#3F4E4F];
     @apply hover:text-[#DCD7C9] hover:border-[#DCD7C9] hover:scale-110 duration-300;
@@ -134,12 +134,13 @@ body {
   .project-card {
     @apply flex;
     @apply flex-col;
-    @apply lg:flex-row;
+    @apply md:flex-row;
     @apply p-4 my-4; 
     @apply duration-500;
     @apply items-center;
     @apply md:items-start;
-    @apply w-5/6;
+    @apply w-full;
+    @apply lg:w-4/6;
   }
   .project-card img {
     @apply mr-6 pt-2;
@@ -150,6 +151,7 @@ body {
   }
   .project-description {
     @apply flex flex-col;
+    @apply w-[95%];
   }
   .project-description h3 {
     @apply text-[#3F4E4F] text-lg font-bold;

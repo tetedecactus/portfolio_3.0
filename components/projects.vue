@@ -120,12 +120,14 @@ export default {
   position: relative;
 }
 
-.project-card:hover {
-  /* border: 2px solid #3F4E4F; */
-  /* position: relative; */
+.project-card:hover .projects-description {
+  padding: 5px;
 }
 
+
+
 .project-card:hover::before {
+  width: auto;
   content: "";
   position: absolute;
   top: 0px;
@@ -149,29 +151,6 @@ export default {
     right: 0px;
     top: 0px;
   }
-}
-
-#techno p:hover {
-  color: #A27B5C;
-  border: 1px solid #A27B5C;
-  border-radius: 10%;
-}
-
-.hover-effect::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2); /* Opacité de 20% */
-  opacity: 0; /* Initialement invisible */
-  transition: opacity 0.3s ease-in-out;
-  pointer-events: none; /* Permet aux contenus internes de rester cliquables */
-}
-
-.hover-effect:hover::before {
-  opacity: 1; /* Visible au survol */
 }
 
 .project-card video::-webkit-media-controls-panel {
