@@ -134,15 +134,17 @@ body {
   .projects-container h2 {
     @apply text-[#3F4E4F] text-xl font-bold uppercase;
     @apply md:pl-4;
+    @apply w-1/2;
   }
   .project-card {
     @apply flex;
     @apply flex-col;
-    @apply md:flex-row;
+    @apply lg:flex-row;
     @apply p-4 my-4; 
     @apply duration-500;
+    /* @apply justify-center */
     @apply items-center;
-    @apply md:items-start;
+    @apply lg:items-start;
     @apply w-full;
     @apply lg:w-4/6;
   }
@@ -151,30 +153,27 @@ body {
   }
   .project-card video {
     @apply pt-2;
-    @apply md:mr-6;
+    @apply lg:mr-6;
   }
   .project-description {
     @apply flex flex-col;
-    @apply w-[95%];
   }
   .project-description h3 {
     @apply text-[#3F4E4F] text-lg font-bold;
     @apply text-center;
-    @apply sm:text-start;
+    @apply lg:text-start;
     @apply my-4;
-  }
-  .project-description .text-description {
-    @apply w-3/4;
-    @apply md:w-full;
   }
   .project-description p {
     @apply text-[#DCD7C9] text-sm;
     @apply flex-col;
     @apply items-center;
     @apply text-justify;
+    @apply w-full;
   }
   .project-description p span {
     @apply text-[#3F4E4F];
+    @apply text-justify;
   }
   .project-description div {
     @apply flex flex-row;

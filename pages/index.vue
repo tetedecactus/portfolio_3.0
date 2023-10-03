@@ -33,6 +33,7 @@ export default defineComponent({
     about,
     projects,
   },
+
 });
 </script>
 

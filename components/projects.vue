@@ -42,7 +42,6 @@
                 <p>JSON</p>
                 <p>YO Code</p>
                 <p>Azure DevOps</p>
-                <p>VScode</p>
             </div>
         </div>
     </div>
@@ -58,7 +57,6 @@
           <p>J'ai fait le site web pour un client qui euvre dans le home framing a Edmonton, <span>East Claw Construction inc</span></p>
           <div>
               <p>Gatsby</p>
-              <p>React</p>
               <p>Bootstrap</p>
               <p>FireBase</p>
           </div>
@@ -74,7 +72,6 @@
           <h3>Pro Bono Portfolio</h3>
           <p>J'ai fait ce portfolio pour une amie qui oeuvre dans le designe interieur. Ce site aborde un style<span> Minimaliste et Propre</span>. J'aime particulierement le side scroll de celui-ci. J'ai egalement decouvert le BLANC.</p>
           <div>
-              <p>Vue3</p>
               <p>Nuxt3</p>
               <p>Tailwind CSS</p>
               <p>FireBase</p>

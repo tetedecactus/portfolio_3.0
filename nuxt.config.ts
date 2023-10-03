@@ -7,12 +7,17 @@ export default {
     'nuxt-simple-sitemap',
     // '@nuxt/http',
   ],
+  head: {
+    title: 'O LAB LAC | Portfolio',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    ],
+    link: [ { rel: 'icon', type: 'image/png', sizes: '24x24', href: '~/programmeur.png' }, ],
+  },
   site: {
     url: 'https://olablac.com',
   },
-  // http: {
-    // baseURL: 'https://olablac.com',
-  // },
   'nuxt-simple-sitemap': {
     path: '/sitemap.xml',
     hostname: 'https://olablac.com',
