@@ -11,6 +11,7 @@
           <h3>Portfolio 1.0</h3>
           <p>Mon premier portfolio et aussi l'un de mes premier "vrai" projet front-end, style <span>Dark Razor Wave </span> fait avec Bootstrap et React</p>
           <div>
+              <p>NodeJs</p>
               <p>React</p>
               <p>Bootstrap</p>
           </div>
@@ -39,6 +40,7 @@
             <h3>VScode Theme</h3>
             <p>Theme Visual Studio Code basee sur le Manga<span> One Piece</span>. Comme a mon habitude Dark Darker Dark+Dark x Dark.</p>
             <div>
+                <p>VScode</p>
                 <p>JSON</p>
                 <p>YO Code</p>
                 <p>Azure DevOps</p>
@@ -56,8 +58,9 @@
           <h3>Site Web Free Lance</h3>
           <p>J'ai fait le site web pour un client qui euvre dans le home framing a Edmonton, <span>East Claw Construction inc</span></p>
           <div>
-              <p>Gatsby</p>
-              <p>Bootstrap</p>
+              <p>NodeJs</p>
+              <p>Nuxt3</p>
+              <p>Tailwind CSS</p>
               <p>FireBase</p>
           </div>
       </div>
@@ -72,6 +75,7 @@
           <h3>Pro Bono Portfolio</h3>
           <p>J'ai fait ce portfolio pour une amie qui oeuvre dans le designe interieur. Ce site aborde un style<span> Minimaliste et Propre</span>. J'aime particulierement le side scroll de celui-ci. J'ai egalement decouvert le BLANC.</p>
           <div>
+              <p>Bun</p>
               <p>Nuxt3</p>
               <p>Tailwind CSS</p>
               <p>FireBase</p>
@@ -89,11 +93,15 @@
           <h3>Portfolio 2.0</h3>
           <p>Ce portfolio est mon deuxième et le premier à être déployé sur l'internet officiellement. J'ai voulu faire quelque chose de simple mais efficace. Je voulais <span>recréer les classiques</span> que l'on voit généralement dans un site web, c'est-à-dire, carrousel, formulaire de contact et changement de thème, de clair a sombre.</p>
           <div>
+              <!-- <p>NodeJs</p> -->
               <p>React</p>
               <p>Tailwind CSS</p>
               <p>FireBase</p>
           </div>
       </div>
+    </div>
+    <div>
+      <a href="/projects"><p class="text-white">Voir tout mes projets</p></a>
     </div>
   </section>
 </template>
@@ -106,7 +114,6 @@ export default {
 
 <style>
 .projects-container {
-  position: relative;
   animation-name: example; 
   animation-duration: 1s;
   animation-delay: 2s;
@@ -120,8 +127,6 @@ export default {
 .project-card:hover .projects-description {
   padding: 5px;
 }
-
-
 
 .project-card:hover::before {
   width: auto;

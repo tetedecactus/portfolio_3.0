@@ -1,14 +1,8 @@
 <template>
-  <div>
-    <Head>
-      <Title>O LAB LAC | Portfolio</Title>
-      <Meta name="description" content="My app description"/>
-    </Head>
-  </div>
+
   <div class="custom-container">
     <div class="navbar" id="menu">
-      <!-- <navbar /> -->
-      <NuxtLayout name="default"/>
+      <NuxtLayout name="custom"/>
     </div>
     <div class="contain">
       <section id="about">
