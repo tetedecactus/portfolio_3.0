@@ -4,11 +4,11 @@
       <Title>O LAB LAC | Portfolio</Title>
       <Meta name="description" content="My app description"/>
     </Head>
-    <!-- -->
   </div>
   <div class="custom-container">
     <div class="navbar" id="menu">
-      <navbar />
+      <!-- <navbar /> -->
+      <NuxtLayout name="default"/>
     </div>
     <div class="contain">
       <section id="about">
@@ -21,7 +21,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent } from 'vue';
 import navbar from '../components/navbar.vue';
 import about from '../components/about.vue';
