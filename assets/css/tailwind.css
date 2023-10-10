@@ -148,7 +148,6 @@ body {
     @apply lg:w-full;
     @apply p-4 my-4; 
     @apply duration-500;
-    /* @apply justify-center */
     @apply items-center;
     @apply lg:items-start;
     @apply w-full;
@@ -171,6 +170,9 @@ body {
     @apply text-center;
     @apply lg:text-start;
     @apply my-4;
+  }
+  .project-description h3 span {
+    @apply text-[#DCD7C9];  
   }
   .project-description p {
     @apply text-[#DCD7C9] text-sm;
