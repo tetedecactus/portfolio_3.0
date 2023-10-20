@@ -149,7 +149,7 @@ body {
     @apply p-4 my-4; 
     @apply duration-500;
     @apply items-center;
-    @apply lg:items-start;
+    /* @apply lg:items-start; */
     @apply w-full;
   }
 
@@ -198,9 +198,49 @@ body {
     @apply text-[#3F4E4F]
   }
   /* -------------------------------------- */
-   /* ----------- Menu Component ----------- */
+   /* ----------- Projects Page ----------- */
+  .projects-page-container {
+    @apply relative;
+    @apply w-full h-full;
+    @apply flex;
+    @apply flex-col;
+    @apply sm:flex-row;
+    @apply items-center;
+    @apply py-14 px-12;
 
+  }
+  .links-card {
+    @apply w-5/6;
+    @apply flex;
+    @apply relative;
+    @apply justify-center;
+  }
+ 
+  .projects-perso-container {
+    @apply flex flex-col;
+    @apply justify-center;
+    @apply w-1/2;
+  }
+  .projects-perso-container h2 {
+    @apply text-[#3F4E4F] text-xl font-bold uppercase;
+    @apply text-center;
+    @apply mb-14;
+  }
+
+  .projects-42-container {
+    @apply flex flex-col;
+    @apply w-1/2;
+    /* @apply justify-center; */
+  }
+
+  .projects-42-container h2 {
+    @apply text-[#3F4E4F] text-xl font-bold uppercase;
+    @apply text-center;
+    @apply mb-14;
+  }
   /* -------------------------------------- */
+
+
 }
 
 @layer utilities {}

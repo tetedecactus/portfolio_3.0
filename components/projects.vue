@@ -1,4 +1,4 @@
-<template>
+bun<template>
   <section class="projects-container">
     <h2>Projets</h2>
     <!-- 1er Projet -->
