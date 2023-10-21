@@ -20,12 +20,14 @@ import { defineComponent } from 'vue';
 import navbar from '../components/navbar.vue';
 import about from '../components/about.vue';
 import projects from '../components/projects.vue';
+import custom from '../layouts/custom.vue';
 
 export default defineComponent({
   components: {
     navbar,
     about,
     projects,
+    custom,
   },
 
 });

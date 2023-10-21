@@ -20,6 +20,22 @@
                 </div>
             </a>
         </div>
+        <div class="links-card">
+            <a href="https://github.com/tetedecactus/Fdf_42">
+                <div class="project-card">
+                  <img src="../assets/images/fdf.webp" width="150" height="130" alt="" loading="lazy">
+                    <div class="project-description">
+                        <h3>Fil De Fer &nbsp;<span> &#x2192;</span></h3>
+                        <p>Mon projet final chez <span>42 Québec (L) </span>Nous avions pour mission de faire un jeu de <span>Pong</span> et d'y ajouter un chat ainsi que plusieur futuring comme 1v1, 1vBot et meme un pong 3D (ouff je sais). J'ai fait ce projet avec une Power équipe, ce fut un défi génial a accomplir.</p>
+                        <div >
+                            <p>C</p>
+                            <p>NestJs</p>
+                            <p>Docker</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
 </template>
 
@@ -27,6 +43,7 @@
 export default {
 
 };
+
 </script>
 
 <style>

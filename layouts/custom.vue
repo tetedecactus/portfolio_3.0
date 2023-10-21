@@ -12,9 +12,8 @@
     import { defineComponent } from 'vue';
     import Navbar from '../components/navbar.vue'
 
-    // export default defineComponent({
-    //     components: {
-    //         Navbar,
-    //     },
-    // });
+    export default defineComponent({
+        components: {
+        },
+    });
 </script>
