@@ -21,8 +21,10 @@ export default defineComponent({
 
 <style>
 
-.projects-42-container {
-    align-items: center;
+.projects-page-container {
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+    overflow:  hidden !important;
 }
 
 

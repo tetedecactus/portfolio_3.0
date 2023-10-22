@@ -29,8 +29,26 @@
                         <p>Mon projet final chez <span>42 Québec (L) </span>Nous avions pour mission de faire un jeu de <span>Pong</span> et d'y ajouter un chat ainsi que plusieur futuring comme 1v1, 1vBot et meme un pong 3D (ouff je sais). J'ai fait ce projet avec une Power équipe, ce fut un défi génial a accomplir.</p>
                         <div >
                             <p>C</p>
-                            <p>NestJs</p>
-                            <p>Docker</p>
+                            <p>Librairie graphique</p>
+                            <p>Algorithme</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="links-card">
+            <a href="https://github.com/tetedecactus/Fdf_42">
+                <div class="project-card">
+                  <video width="150" autoplay loop muted playsinline>
+                          <source src="../assets/images/cub3d.webm" type="video/mp4">
+                    </video>
+                    <div class="project-description">
+                        <h3>Cub 3D &nbsp;<span> &#x2192;</span></h3>
+                        <p>Mon projet final chez <span>42 Québec (L) </span>Nous avions pour mission de faire un jeu de <span>Pong</span> et d'y ajouter un chat ainsi que plusieur futuring comme 1v1, 1vBot et meme un pong 3D (ouff je sais). J'ai fait ce projet avec une Power équipe, ce fut un défi génial a accomplir.</p>
+                        <div >
+                            <p>C</p>
+                            <p>Librairie graphique</p>
+                            <p>Algorithme</p>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
 <template>
-    <div class="projects-perso-container">
+    <div class="projects-perso-container ">
             <h2>Projets Personnel</h2>
             <div class="links-card">
                 <a href="https://github.com/tetedecactus/react_bootstrap_portfolio">

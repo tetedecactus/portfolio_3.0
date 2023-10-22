@@ -204,7 +204,7 @@ body {
     @apply flex;
     @apply flex-col;
     @apply sm:flex-row;
-    @apply items-center;
+    @apply items-start;
     @apply mt-20;
     
   }
@@ -227,6 +227,7 @@ body {
   
   .projects-42-container {
     @apply flex flex-col;
+    @apply sm:items-center;
     @apply w-1/2 h-full;
     /* @apply justify-center; */
   }
