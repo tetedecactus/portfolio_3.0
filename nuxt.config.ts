@@ -1,4 +1,14 @@
 export default {
+  devtools: { enabled: true },
+  css: ['@/assets/styles/main.css'],
+  build: {
+    postcss: {
+      plugins: {
+        'tailwindcss': {},
+        'autoprefixer': {},
+      },
+    },
+  },
   telemetry: false,
   modules: [
     '@nuxtjs/tailwindcss',
@@ -13,7 +23,7 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     ],
-    link: [ { rel: 'icon', type: 'image/png', sizes: '24x24', index: 0, href: '/programmeur.png' }, ],
+    link: [ { rel: 'icon', type: 'image/png', sizes: '24x24', index: 0, href: '~/public/favicon.ico' }, ],
   },
   site: {
     url: 'https://olablac.com',
@@ -28,8 +38,7 @@ export default {
     routes: async () => {
       return [
         '/',
-        '/about',
-        '/portfolio',
+        '/projects',
         // ...
       ];
     },

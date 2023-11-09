@@ -1,5 +1,4 @@
 <template>
-
   <div class="custom-container">
     <div class="navbar" id="menu">
       <NuxtLayout name="custom"/>

@@ -1,6 +1,7 @@
 <template>
     <div class="projects-page-container split-page">
         <projet_perso />
+        
         <projet_42 />         
     </div>
 </template>
