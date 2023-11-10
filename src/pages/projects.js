@@ -25,7 +25,7 @@ const Projects = () => {
             <div className="navbar-projects" id="menu">
                 <Navbar />
             </div>
-            <div className="flex flex-row w-3/4 pt-24 ">
+            <div className="projects-page-subcontainer">
                 <ProjetPerso />
                 <Projet42 />         
             </div>
