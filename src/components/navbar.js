@@ -1,5 +1,6 @@
 import React from "react";
 import SocialIcons from "./social_icons";
+import { Link } from "gatsby"
 
 import "../styles/components/navbar.css";
 
@@ -34,9 +35,9 @@ const Submenu = () => {
             <nav id="primary_nav">
                 <ul>
                     <li>
-                    <a className="nav__link" href="#about"><p className="nav-link">à propos</p></a>
-                    <a className="nav__link" href="#projects"><p className="nav-link">projets</p></a>
-                    <a className="nav__link" href="#contact"><p className="nav-link">contact</p></a>
+                    <Link to="#about"><p className="nav-link">à propos</p></Link>
+                    <Link to="#projects"><p className="nav-link">projets</p></Link>
+                    <Link to="#contact"><p className="nav-link">contact</p></Link>
                     <a href="cv" download="Cv.pdf">
                         <p id="cv-btn">
                         DOWNLOAD C.V
