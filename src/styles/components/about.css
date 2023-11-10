@@ -1,0 +1,18 @@
+.about-container {
+    position: relative;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation: slide-down 1.5s ease;
+}
+
+@keyframes slide-down {
+    0% {
+        left: 0px;
+        top: -50rem;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}

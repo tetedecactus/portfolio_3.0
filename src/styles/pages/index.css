@@ -1,0 +1,5 @@
+
+.custom-container {
+  overflow: hidden !important;
+  overflow-y: scroll !important;
+}
