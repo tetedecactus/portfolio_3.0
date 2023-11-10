@@ -8,11 +8,11 @@
 
 @keyframes slide-down {
     0% {
-        left: 0px;
         top: -50rem;
+        left: 0px;
     }
     100% {
-        left: 0px;
         top: 0px;
+        left: 0px;
     }
 }

@@ -130,8 +130,12 @@ const Projects = () => {
                 </div>
             </div>
             </a>
-            <div>
-            <a href="/projects"><p className="text-white">Voir tout mes projets</p></a>
+            <div className="all-project-link">
+                <a href="/projects">
+                    <p>
+                        Voir tout mes projets &nbsp;<span> &#x2192;</span>
+                    </p>
+                </a>
             </div>
         </section>
     );

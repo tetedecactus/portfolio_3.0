@@ -1,9 +1,10 @@
 /* Projects Global */
 .projects-container {
+  position: relative;
     animation-name: example; 
     animation-duration: 1s;
     animation-delay: 2s;
-    animation: slide-down 2.5s ease;
+    animation: slide-left 2.5s ease;
   }
   
   .project-card {
@@ -44,7 +45,7 @@
     color: #DCD7C9;
   }
   
-  @keyframes slide-down {
+  @keyframes slide-left {
     0% {
       right: -40rem;
       top: 0rem;
@@ -78,7 +79,7 @@
   animation-name: example; 
   animation-duration: 1s;
   animation-delay: 2s;
-  animation: slide-down 2.5s ease;
+  animation: slide-left 2.5s ease;
 }
 
 .project-card {
@@ -119,7 +120,7 @@
   color: #DCD7C9;
 }
 
-@keyframes slide-down {
+@keyframes slide-left {
   0% {
     right: -40rem;
     top: 0rem;
@@ -155,7 +156,7 @@
   animation-name: example; 
   animation-duration: 1s;
   animation-delay: 2s;
-  animation: slide-down 2.5s ease;
+  animation: slide-left 2.5s ease;
 }
 
 .project-card {
@@ -196,7 +197,7 @@
   color: #DCD7C9;
 }
 
-@keyframes slide-down {
+@keyframes slide-left {
   0% {
     right: -40rem;
     top: 0rem;

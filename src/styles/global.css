@@ -25,6 +25,11 @@ body {
     @apply lg:w-1/2;
     @apply pt-24;
 }
+.navbar-projects {
+    @apply flex justify-center;
+    @apply lg:w-1/4;
+    @apply pt-24;
+}
 .custom-container .contain {
     @apply flex flex-col;
     @apply justify-normal;
@@ -67,8 +72,8 @@ body {
 }
 .social-icons-mobile {
     @apply flex;
-    /* @apply sm:hidden; */
     @apply pt-6;
+    @apply md:ml-2;
 }
 .menu-icon {
     @apply flex;
@@ -106,8 +111,9 @@ body {
     @apply hover:text-[#DCD7C9] hover:bg-[#2C3639] hover:bg-opacity-20 hover:duration-500 ;
 }
 .social-icons {
+    @apply w-full;
     @apply flex justify-center;
-    @apply ml-7;
+    @apply ml-20;
     @apply lg:mt-48;
 }
 .social-link {
@@ -146,7 +152,6 @@ body {
 .projects-container h2 {
     @apply text-[#3F4E4F] text-xl font-bold uppercase;
     @apply md:pl-4;
-    @apply w-1/2;
 }
 .project-card {
     @apply flex;
@@ -203,6 +208,26 @@ body {
     @apply mr-5;
     @apply text-[#3F4E4F]
 }
+.all-project-link {
+    @apply w-full;
+    @apply flex;
+    @apply justify-start;
+    @apply items-start;
+    @apply my-8;
+}
+.all-project-link p {
+    @apply text-[#3F4E4F] text-sm font-bold;
+    @apply hover:text-[#DCD7C9] hover:duration-500;
+    @apply ml-6;
+    transition: all 1s ease-out;
+}
+.all-project-link p:hover span {
+    @apply hover:text-[#DCD7C9] hover:duration-500;
+    transform: translate(10px,0px);
+    display: inline-block;
+    color: #DCD7C9;
+    transition: all 1s ease-out;
+}
 /* -------------------------------------- */
 /* ----------- Projects Page ----------- */
 .projects-page-container {
@@ -212,8 +237,6 @@ body {
     @apply sm:flex-row;
     @apply items-start;
     @apply mt-20;
-
-    
 }
 .links-card {
     @apply w-9/12;
@@ -224,8 +247,8 @@ body {
 .projects-perso-container {
     @apply w-[100vw] h-[100vh];
     @apply flex flex-col;
-    @apply sm:items-center;
-    @apply w-1/2 h-full ;
+    @apply items-center;
+    @apply sm:w-full h-full ;
 }
 .projects-perso-container h2 {
     @apply text-[#3F4E4F] text-xl font-bold uppercase;
@@ -235,8 +258,9 @@ body {
 
 .projects-42-container {
     @apply flex flex-col;
-    @apply sm:items-center;
-    @apply w-1/2 h-full;
+    @apply justify-end;
+    @apply items-center;
+    @apply sm:w-full h-full;
     /* @apply justify-center; */
 }
 

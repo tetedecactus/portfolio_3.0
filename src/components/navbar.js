@@ -7,10 +7,12 @@ const Navbar = () => {
     return (
         <nav className="navbar-container">
             <div className="title-container">
-                <h2 className="title-portfolio reveal-text">O<span>livier</span>
-                    <br /> Lab<span>recque</span>
-                    <br /> Lac<span>asse</span>
-                </h2>
+                <a href="/">
+                    <h2 className="title-portfolio reveal-text">O<span>livier</span>
+                        <br /> Lab<span>recque</span>
+                        <br /> Lac<span>asse</span>
+                    </h2>
+                </a>
                 <p><span>-</span> étudiant 42 Quebec <span>-</span></p>
                 <p><span>-</span> développeur web <span>-</span></p>
                 <div className="menu-icon">

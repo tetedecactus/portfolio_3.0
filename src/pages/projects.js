@@ -1,5 +1,7 @@
 import React from "react"; 
 
+import Navbar from "../components/navbar";
+
 import "../styles/pages/projects.css";
 
 import joe_portfolio from "../images/joe_portfolio.webm";
@@ -20,8 +22,13 @@ import transcendence_mp4 from "../images/transcendence.mp4";
 const Projects = () => {
     return (
         <div className="projects-page-container split-page">
-            <ProjetPerso />
-            <Projet42 />         
+            <div className="navbar-projects" id="menu">
+                <Navbar />
+            </div>
+            <div className="flex flex-row w-3/4 pt-24 ">
+                <ProjetPerso />
+                <Projet42 />         
+            </div>
         </div>
     );
 };

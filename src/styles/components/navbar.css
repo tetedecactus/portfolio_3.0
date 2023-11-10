@@ -2,35 +2,35 @@
 .reveal-text::after {
 	animation-delay: var(--animation-delay, 0s);
 	animation-iteration-count: var(--iterations, 1);
-	animation-duration: var(--duration, 5000ms);
+	animation-duration: var(--duration, 3000ms);
 	animation-fill-mode: both;
 	animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+    
 }
 
 .reveal-text {
-	--animation-delay: var(--delay, 0);
-	--animation-duration: var(--duration, 4000ms);
+    --animation-delay: var(--delay, 0);
+	--animation-duration: var(--duration, 3000ms);
 	--animation-iterations: var(--iterations, 1);
 	position: relative;
 	animation-name: clip-text;
 	white-space: nowrap;
 	cursor: default;
-	
-	&::after {
-		content: "";
-		position: absolute;
-		z-index: 999;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background-color: #3F4E4F;
-		transform: scaleX(0);
-		transform-origin: 0 50%;
-		pointer-events: none;
-		animation-name: text-revealer;
-	}
-	
+}
+
+ ::after {
+    content: "";
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3F4E4F ;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    pointer-events: none;
+    animation-name: text-revealer;
 }
 
 
@@ -116,11 +116,6 @@
     padding-left: 17px;
     text-decoration: none;
 } 
-.nuxt-link {
-    color: #DCD7C9;
-    border-color: #DCD7C9;
-    border-width: 2px;
-}
 
 .nav__link .active {
     color: #DCD7C9;
