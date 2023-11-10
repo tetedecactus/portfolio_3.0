@@ -1,15 +1,15 @@
-import * as React from "react"
-import Navbar from '../components/navbar.js';
-import About from '../components/about.js';
-import Projects from '../components/projects.js';
+import * as React from 'react'
+import Navbar from '../components/navbar.js'
+import About from '../components/about.js'
+import Projects from '../components/projects.js'
 
-import "../styles/pages/index.css"
+import '../styles/pages/index.css'
 
 const IndexPage = () => {
   return (
     <div>
       <header>
-        <Head/>
+        <Head />
       </header>
       <main className="custom-container">
         <div className="navbar" id="menu">
