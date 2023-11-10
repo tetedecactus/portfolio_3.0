@@ -71,7 +71,7 @@ body {
   .social-icons-mobile {
     @apply flex;
     @apply pt-6;
-    @apply md:ml-2;
+    /* @apply md:ml-2; */
   }
   .menu-icon {
     @apply flex;
@@ -103,9 +103,14 @@ body {
     @apply hover:text-[#DCD7C9] hover:border-[#DCD7C9] hover:scale-110 duration-300;
   }
   .nav-link {
+    @apply py-0;
     @apply bg-[#3F4E4F];
     @apply text-[#0d0d0d] uppercase;
     @apply hover:text-[#DCD7C9] hover:bg-[#2C3639] hover:bg-opacity-20 hover:duration-500;
+  }
+
+  .active_link {
+    @applytext- [#DCD7C9] bg-[#2C3639] bg-opacity-20 duration-500;
   }
   .social-icons {
     @apply w-full;
@@ -186,8 +191,9 @@ body {
     @apply flex-col;
     @apply items-center;
     @apply text-justify;
+    @apply justify-center;
     @apply w-full;
-    @apply lg:w-11/12;
+    @apply lg:w-10/12;
     @apply xl:w-full;
   }
   .project-description p span {
@@ -266,18 +272,22 @@ body {
     @apply flex flex-col;
     @apply items-center;
     @apply sm:w-full h-full;
+    @apply sm:mb-24;
+    @apply 2xl:mb-0;
   }
   .projects-perso-container h2 {
     @apply text-[#3F4E4F] text-xl font-bold uppercase;
     @apply text-center;
     @apply mb-14;
   }
-
+ 
   .projects-42-container {
     @apply flex flex-col;
     @apply justify-end;
     @apply items-center;
     @apply sm:w-full h-full;
+    @apply lg:mb-24;
+    @apply 2xl:mb-0;
     /* @apply justify-center; */
   }
 

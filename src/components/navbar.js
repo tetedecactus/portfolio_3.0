@@ -35,23 +35,66 @@ const Navbar = () => {
 export default Navbar
 
 const Submenu = () => {
+  // this is only active when the location pathname is exactly
+  // the same as the href.
+  const isActive = ({ isCurrent }) => {
+    return isCurrent ? { className: 'active_link' } : {}
+  }
+
+  const ExactNavLink = (props) => <Link getProps={isActive} {...props} />
+
+  // this link will be active when itself or deeper routes
+  // are current
+  const isPartiallyActive = ({ isPartiallyCurrent }) => {
+    return isPartiallyCurrent ? { className: 'active_link' } : {}
+  }
+
+  const PartialNavLink = (props) => (
+    <Link getProps={isPartiallyActive} {...props} />
+  )
+
   return (
     <div className="menu-container" id="navbar">
       <nav id="primary_nav">
         <ul>
           <li>
-            <Link to="#about">
-              <p className="nav-link">à propos</p>
+            <Link
+              to="/#about"
+              className={`nav-link ${ExactNavLink ? 'active_link' : ''} ${
+                PartialNavLink ? 'partially-active' : ''
+              }`}
+              getProps={isActive}
+              activeClassName="active_link"
+            >
+              à propos
             </Link>
-            <Link to="#projects">
-              <p className="nav-link">projets</p>
+          </li>
+          <li>
+            <Link
+              className={`nav-link ${isActive ? 'active_link' : ''} ${
+                isPartiallyActive ? 'active_link' : ''
+              }`}
+              to="/#projects"
+              getProps={isPartiallyActive}
+              activeClassName="active_link"
+            >
+              projets
             </Link>
-            <Link to="#contact">
-              <p className="nav-link">contact</p>
+          </li>
+          <li>
+            <Link
+              className="nav-link"
+              to="/#contact"
+              getProps={isPartiallyActive}
+              activeClassName="active_link"
+            >
+              contact
             </Link>
-            <a href="cv" download="Cv.pdf">
-              <p id="cv-btn">DOWNLOAD C.V</p>
-            </a>
+          </li>
+          <li>
+            <Link id="cv-btn" to="cv" download="Cv.pdf">
+              DOWNLOAD C.V
+            </Link>
           </li>
         </ul>
         <SocialIcons class="social-icons" />
