@@ -1,7 +1,1 @@
-{
-  "componentChunkName": "component---src-pages-projects-js",
-  "path": "/projects/",
-  "result": { "pageContext": {} },
-  "staticQueryHashes": [],
-  "slicesMap": {}
-}
+{"componentChunkName":"component---src-pages-projects-jsx","path":"/projects/","result":{"pageContext":{}},"staticQueryHashes":[],"slicesMap":{}}
