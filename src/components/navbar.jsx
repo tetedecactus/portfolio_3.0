@@ -1,5 +1,7 @@
 import React from 'react'
+// import { useEffect } from 'react'
 import SocialIcons from './social_icons'
+// import { Link } from 'react-scroll';
 import { Link } from 'gatsby'
 
 import '../styles/components/navbar.css'
@@ -35,23 +37,6 @@ const Navbar = () => {
 export default Navbar
 
 const Submenu = () => {
-  // this is only active when the location pathname is exactly
-  // the same as the href.
-  const isActive = ({ isCurrent }) => {
-    return isCurrent ? { className: 'active_link' } : {}
-  }
-
-  const ExactNavLink = (props) => <Link getProps={isActive} {...props} />
-
-  // this link will be active when itself or deeper routes
-  // are current
-  const isPartiallyActive = ({ isPartiallyCurrent }) => {
-    return isPartiallyCurrent ? { className: 'active_link' } : {}
-  }
-
-  const PartialNavLink = (props) => (
-    <Link getProps={isPartiallyActive} {...props} />
-  )
 
   return (
     <div className="menu-container" id="navbar">
@@ -59,34 +44,24 @@ const Submenu = () => {
         <ul>
           <li>
             <Link
-              to="/#about"
-              className={`nav-link ${ExactNavLink ? 'active_link' : ''} ${
-                PartialNavLink ? 'partially-active' : ''
-              }`}
-              getProps={isActive}
-              activeClassName="active_link"
+              className='nav-link'
+              to="#about"
             >
               à propos
             </Link>
           </li>
           <li>
             <Link
-              className={`nav-link ${isActive ? 'active_link' : ''} ${
-                isPartiallyActive ? 'active_link' : ''
-              }`}
-              to="/#projects"
-              getProps={isPartiallyActive}
-              activeClassName="active_link"
+              className='nav-link'
+              to="#projects"
             >
               projets
             </Link>
           </li>
           <li>
             <Link
-              className="nav-link"
+              className='nav-link'
               to="/#contact"
-              getProps={isPartiallyActive}
-              activeClassName="active_link"
             >
               contact
             </Link>
@@ -97,8 +72,8 @@ const Submenu = () => {
             </Link>
           </li>
         </ul>
-        <SocialIcons class="social-icons" />
+        <SocialIcons className="social-icons" />
       </nav>
     </div>
-  )
-}
+  );
+};

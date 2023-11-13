@@ -1,4 +1,5 @@
 import * as React from 'react'
+// import { useEffect } from 'react'
 import Navbar from '../components/navbar.jsx'
 import About from '../components/about.jsx'
 import Projects from '../components/projects.jsx'
@@ -6,6 +7,7 @@ import Projects from '../components/projects.jsx'
 import '../styles/pages/index.css'
 
 const IndexPage = () => {
+
   return (
     <div>
       <main className="custom-container">

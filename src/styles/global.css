@@ -108,9 +108,10 @@ body {
     @apply text-[#0d0d0d] uppercase;
     @apply hover:text-[#DCD7C9] hover:bg-[#2C3639] hover:bg-opacity-20 hover:duration-500;
   }
+  .active-link {
+    @apply uppercase;
+    @apply text-[#DCD7C9] bg-[#2C3639] bg-opacity-20 duration-500;
 
-  .active_link {
-    @applytext- [#DCD7C9] bg-[#2C3639] bg-opacity-20 duration-500;
   }
   .social-icons {
     @apply w-full;
