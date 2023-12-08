@@ -48,8 +48,7 @@
               </h3>
               <p>
                 Theme Visual Studio Code basee sur le Manga
-                <span> One Piece</span>. Comme a mon habitude Dark Darker
-                Dark+Dark x Dark.
+                 One Piece, Dragon Slayer et ChainsawMan.
               </p>
               <div>
                 <p>VScode</p>
@@ -78,7 +77,7 @@
               </h3>
               <p>
                 J'ai fait le site web pour un client qui euvre dans le home
-                framing a Edmonton, <span>East Claw Construction inc</span>
+                framing a Edmonton, East Claw Construction inc.
               </p>
               <div>
                 <p>NodeJs</p>
@@ -107,8 +106,8 @@
               <p>
                 J'ai fait ce portfolio pour une amie qui oeuvre dans le designe
                 interieur. Ce site aborde un style
-                <span> Minimaliste et Propre</span>. J'aime particulierement le
-                side scroll de celui-ci. J'ai egalement decouvert le BLANC.
+                Minimaliste et Propre. J'aime particulierement le
+                side scroll de celui-ci.
               </p>
               <div>
                 <p>Bun</p>
@@ -138,7 +137,7 @@
                 Ce portfolio est mon deuxième et le premier à être déployé sur
                 l'internet officiellement. J'ai voulu faire quelque chose de
                 simple mais efficace. Je voulais{' '}
-                <span>recréer les classiques</span> que l'on voit
+                recréer les classiques que l'on voit
                 généralement dans un site web, c'est-à-dire, carrousel,
                 formulaire de contact et changement de thème, de clair a sombre.
               </p>
