@@ -20,8 +20,11 @@
   },
   "dependencies": {
     "@nuxt/http": "^0.6.4",
+    "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/robots": "^3.0.0",
+    "firebase": "^10.7.1",
     "firebase-admin": "^12.0.0",
+    "firebase-tools": "^13.0.1",
     "jquery": "^3.7.0"
   }
 }

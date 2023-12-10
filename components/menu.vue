@@ -1,5 +1,5 @@
 <template>
-  <div className="menu-container" id="navbar">
+  <div class="menu-container" id="navbar">
       <nav id="primary_nav">
         <ul>
           <li>
@@ -8,7 +8,7 @@
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink class="nav-link" to="#projects">
+            <NuxtLink class="nav-link" href="/projects">
               projets
             </NuxtLink>
           </li>
@@ -43,27 +43,6 @@ export default defineComponent({
   components: {
     cv,
     social_icons,
-  },
-  mounted() {
-    const navLinkEls = document.querySelectorAll('.nav__link');
-    const sectionsEls = document.querySelectorAll('.section');
-
-    let currentSection = 'about';
-
-    window.addEventListener('scroll', () => {
-      sectionsEls.forEach(sectionsEl => {
-        if (window.scrollY >= sectionsEl.offsetTop) 
-          currentSection = sectionsEl.id;
-      });
-
-      navLinkEls.forEach(navLinkEl => {
-        const to = navLinkEl.getAttribute('to'); // Utilisez getAttribute pour obtenir l'attribut 'to'
-        if (to === `/${currentSection}`) {
-          document.querySelector('.active')?.classList.remove('active');
-          navLinkEl.classList.add('active');
-        }
-      });
-    });
   },
 });
 

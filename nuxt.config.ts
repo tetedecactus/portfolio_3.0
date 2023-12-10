@@ -1,4 +1,7 @@
 export default {
+  buildModules: [
+    '@nuxtjs/dotenv'
+  ],
   build: {
     postcss: {
       plugins: {

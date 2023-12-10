@@ -1,5 +1,5 @@
 <template>
-  <section class="projects-container">
+  <section class="projects-container" id="#projects">
       <h2>Projets</h2>
       <a
         href="https://github.com/tetedecactus/react_bootstrap_portfolio"
@@ -133,7 +133,7 @@
         </div>
       </a>
       <a
-        href="https://github.com/tetedecactus/react_tailwind_portfolio"
+        href="https://portfolio-1201c.web.app/"
         aria-label="Liens vers projet"
       >
         <div class="project-card">

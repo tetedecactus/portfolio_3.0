@@ -238,7 +238,9 @@ body {
     @apply flex-col;
     @apply lg:flex-row;
     @apply items-start;
-    @apply mt-20;
+    @apply mt-10;
+    /* @apply md:mt-; */
+    /* @apply lg:mt-12; */
   }
 
   .navbar-projects {
