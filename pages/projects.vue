@@ -1,19 +1,19 @@
 <template>
-    <div class="projects-page-container split-page">
-      <div class="navbar-projects" id="menu">
-        <Navbar />
-      </div>
-      <div class="projects-page-subcontainer">
-        <ProjetPerso />
-        <Projet42 />
-      </div>
+  <div class="projects-page-container split-page">
+    <div class="navbar-projects" id="menu">
+      <Navbar />
     </div>
+    <div class="projects-page-subcontainer">
+      <ProjetPerso />
+      <Projet42 />
+    </div>
+  </div>
 </template>
 
 <script>
-import { defineComponent } from 'vue';
-import ProjetPerso from '../components/projets_perso.vue';
-import Projet42 from '../components/projets_42.vue';
+import { defineComponent } from "vue";
+import ProjetPerso from "../components/projets_perso.vue";
+import Projet42 from "../components/projets_42.vue";
 
 export default defineComponent({
   components: {
@@ -21,7 +21,6 @@ export default defineComponent({
     ProjetPerso,
   },
 });
-
 </script>
 
 <style>
@@ -50,7 +49,7 @@ export default defineComponent({
 
 .project-card:hover::before {
   width: auto;
-  content: '';
+  content: "";
   position: absolute;
   top: 0px;
   right: 0px;
@@ -95,6 +94,4 @@ export default defineComponent({
 .project-card video::-webkit-media-controls-play-button {
   display: none !important;
 }
-
-
 </style>

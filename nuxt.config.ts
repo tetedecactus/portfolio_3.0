@@ -1,7 +1,5 @@
 export default {
-  buildModules: [
-    '@nuxtjs/dotenv'
-  ],
+  buildModules: ["@nuxtjs/dotenv"],
   build: {
     postcss: {
       plugins: {
@@ -12,35 +10,43 @@ export default {
   },
   telemetry: false,
   modules: [
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/google-fonts',
-    '@nuxtjs/robots',
-    'nuxt-simple-sitemap',
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/google-fonts",
+    "@nuxtjs/robots",
+    "nuxt-simple-sitemap",
     // '@nuxt/http',
   ],
   head: {
-    title: 'O LAB LAC | Portfolio',
+    title: "O LAB LAC | Portfolio",
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
     ],
-    link: [ { rel: 'icon', type: 'image/png', sizes: '24x24', index: 0, href: '/programmeur.png' }, ],
+    link: [
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "24x24",
+        index: 0,
+        href: "/programmeur.png",
+      },
+    ],
   },
   site: {
-    url: 'https://olablac.com',
+    url: "https://olablac.com",
   },
-  'nuxt-simple-sitemap': {
-    path: '/sitemap.xml',
-    hostname: 'https://olablac.com',
+  "nuxt-simple-sitemap": {
+    path: "/sitemap.xml",
+    hostname: "https://olablac.com",
     defaults: {
-      changefreq: 'daily',
+      changefreq: "daily",
       priority: 1,
     },
     routes: async () => {
       return [
-        '/',
-        '/about',
-        '/portfolio',
+        "/",
+        "/about",
+        "/portfolio",
         // ...
       ];
     },
@@ -48,12 +54,12 @@ export default {
   googleFonts: {
     families: {
       Play: true,
-      'Josefin+Sans': true,
+      "Josefin+Sans": true,
       Lato: [100, 300],
       Raleway: {
         wght: [100, 500],
-        ital: [100]
+        ital: [100],
       },
-    }
-  }
-}
+    },
+  },
+};

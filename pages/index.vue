@@ -2,7 +2,7 @@
   <div>
     <Head>
       <Title>O LAB LAC | Portfolio</Title>
-      <Meta name="description" content="My app description"/>
+      <Meta name="description" content="My app description" />
     </Head>
     <!-- -->
   </div>
@@ -22,10 +22,10 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue';
-import navbar from '../components/navbar.vue';
-import about from '../components/about.vue';
-import projects from '../components/projects.vue';
+import { defineComponent } from "vue";
+import navbar from "../components/navbar.vue";
+import about from "../components/about.vue";
+import projects from "../components/projects.vue";
 
 export default defineComponent({
   components: {
@@ -33,12 +33,11 @@ export default defineComponent({
     about,
     projects,
   },
-
 });
 </script>
 
 <style>
-  .custom-container {
+.custom-container {
   overflow: hidden !important;
   overflow-y: scroll !important;
 }
