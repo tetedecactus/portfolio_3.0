@@ -32,6 +32,11 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.navbar-container {
+  /* margin-top: 0px; */
+  margin: 0;
+  padding: 0;
+}
 .reveal-text,
 .reveal-text::after {
   animation-delay: var(--animation-delay, 0s);
@@ -46,9 +51,10 @@ export default defineComponent({
   --animation-duration: var(--duration, 4000ms);
   --animation-iterations: var(--iterations, 1);
   position: relative;
-  animation-name: clip-text;
+  /* animation-name: clip-text; */
   white-space: nowrap;
   cursor: default;
+  animation: clip-text 1.5s ease-in-out;
 
   &::after {
     content: "";
@@ -62,7 +68,8 @@ export default defineComponent({
     transform: scaleX(0);
     transform-origin: 0 50%;
     pointer-events: none;
-    animation-name: text-revealer;
+    /* animation-name: text-revealer; */
+    animation: text-revealer 1.5s ease-in-out;
   }
 }
 
@@ -75,7 +82,94 @@ export default defineComponent({
   }
 }
 
+@-moz-keyframes slide-down {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@-o-keyframes slide-down {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@-ms-keyframes slide-down {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
 @keyframes text-revealer {
+  0%,
+  50% {
+    transform-origin: 0 50%;
+  }
+
+  60%,
+  100% {
+    transform-origin: 100% 50%;
+  }
+
+  60% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+@-moz-keyframes slide-down {
+  0%,
+  50% {
+    transform-origin: 0 50%;
+  }
+
+  60%,
+  100% {
+    transform-origin: 100% 50%;
+  }
+
+  60% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+@-o-keyframes slide-down {
+  0%,
+  50% {
+    transform-origin: 0 50%;
+  }
+
+  60%,
+  100% {
+    transform-origin: 100% 50%;
+  }
+
+  60% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+@-ms-keyframes slide-down {
   0%,
   50% {
     transform-origin: 0 50%;

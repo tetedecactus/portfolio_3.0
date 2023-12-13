@@ -191,7 +191,49 @@
     top: 0px;
   }
 }
+@-webkit-keyframes slide-left {
+  0% {
+    right: -50rem;
+    top: 0rem;
+  }
+  100% {
+    right: 0px;
+    top: 0px;
+  }
+}
 
+@-moz-keyframes slide-left {
+  0% {
+    right: -50rem;
+    top: 0rem;
+  }
+  100% {
+    right: 0px;
+    top: 0px;
+  }
+}
+
+@-o-keyframes slide-left {
+  0% {
+    right: -50rem;
+    top: 0rem;
+  }
+  100% {
+    right: 0px;
+    top: 0px;
+  }
+}
+
+@-ms-keyframes slide-left {
+  0% {
+    right: -50rem;
+    top: 0rem;
+  }
+  100% {
+    right: 0px;
+    top: 0px;
+  }
+}
 .project-card video::-webkit-media-controls-panel {
   display: none !important;
 }

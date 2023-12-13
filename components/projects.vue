@@ -215,12 +215,56 @@ export default {};
 }
 
 .project-card:hover h3 span {
-  transform: translate(10px, 0px);
+  /* transform: translate(10px, 0px); */
   display: inline-block;
   color: #dcd7c9;
 }
 
 @keyframes slide-left {
+  0% {
+    right: -40rem;
+    top: 0rem;
+  }
+  100% {
+    right: 0px;
+    top: 0px;
+  }
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    right: -40rem;
+    top: 0rem;
+  }
+  100% {
+    right: 0px;
+    top: 0px;
+  }
+}
+
+@-moz-keyframes slide-left {
+  0% {
+    right: -40rem;
+    top: 0rem;
+  }
+  100% {
+    right: 0px;
+    top: 0px;
+  }
+}
+
+@-o-keyframes slide-left {
+  0% {
+    right: -40rem;
+    top: 0rem;
+  }
+  100% {
+    right: 0px;
+    top: 0px;
+  }
+}
+
+@-ms-keyframes slide-left {
   0% {
     right: -40rem;
     top: 0rem;

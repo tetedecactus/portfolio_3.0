@@ -228,6 +228,49 @@
     top: 0px;
   }
 }
+@-webkit-keyframes slide-up {
+  0% {
+    right: 0rem;
+    top: 40rem;
+  }
+  100% {
+    right: 0px;
+    top: 0px;
+  }
+}
+
+@-moz-keyframes slide-up {
+  0% {
+    right: 0rem;
+    top: 40rem;
+  }
+  100% {
+    right: 0px;
+    top: 0px;
+  }
+}
+
+@-o-keyframes slide-up {
+  0% {
+    right: 0rem;
+    top: 40rem;
+  }
+  100% {
+    right: 0px;
+    top: 0px;
+  }
+}
+
+@-ms-keyframes slide-up {
+  0% {
+    right: 0rem;
+    top: 40rem;
+  }
+  100% {
+    right: 0px;
+    top: 0px;
+  }
+}
 
 .project-card video::-webkit-media-controls-panel {
   display: none !important;
