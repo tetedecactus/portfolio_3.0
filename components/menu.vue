@@ -12,7 +12,7 @@
           <NuxtLink class="nav-link" to="/#contact"> contact </NuxtLink>
         </li>
         <li>
-          <a id="cv-btn" to="cv" download="Cv.pdf"> DOWNLOAD C.V </a>
+          <a id="cv-btn" :href="cv" download="Cv.pdf"> DOWNLOAD C.V </a>
         </li>
       </ul>
       <SocialIcons class="social-icons" />

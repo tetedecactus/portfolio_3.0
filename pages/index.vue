@@ -11,12 +11,12 @@
       <navbar />
     </div>
     <div class="contain">
-      <section id="about">
+      <div id="about">
         <about />
-      </section>
-      <section id="projects">
+      </div>
+      <div id="projects">
         <projects />
-      </section>
+      </div>
     </div>
   </div>
 </template>

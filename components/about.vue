@@ -40,25 +40,19 @@ export default defineComponent({
 <style scoped>
 .about-container {
   position: relative;
-  top: 0;
   margin-top: 50px;
-  padding: 0;
+  /* padding: 0; */
   animation-name: slide-down;
   animation-duration: 1.5s;
   animation-delay: 2s;
+  animation-direction: normal;
   animation: slide-down 2.5s ease-in-out;
-}
+  -webkit-animation: slide-down 2.5s ease-in-out;
+  -moz-animation: slide-down 2.5s ease-in-out;
 
-@keyframes slide-down {
-  0% {
-    /* padding: 0; */
-    left: 0;
-    top: -50rem;
-  }
-  100% {
-    left: 0;
-    top: 0;
-  }
+  -webkit-animation-name: slide-down;
+  -moz-animation-name: slide-down;
+
 }
 
 @-webkit-keyframes slide-down {
@@ -82,6 +76,17 @@ export default defineComponent({
     top: 0;
   }
 }
+@keyframes slide-down {
+  from {
+    left: 0;
+    top: -50rem;
+  }
+  to {
+    left: 0;
+    top: 0;
+  }
+}
+
 
 @-o-keyframes slide-down {
   0% {
