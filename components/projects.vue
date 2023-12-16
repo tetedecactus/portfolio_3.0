@@ -66,7 +66,7 @@
           alt=""
           loading="lazy"
         />
-        <div class="project-description">
+        <div class="pl-6 project-description">
           <h3>VScode Theme &nbsp;<span> &#x2192;</span></h3>
           <p>
             Toujours en quête de thèmes pour Visual Studio Code qui
@@ -169,8 +169,13 @@
   </section>
 </template>
 
-<script>
-export default {};
+
+<script setup>
+const { data: projectsData } = await useFetch('/api/personnalProjects')
+const { data: projects42Data } = await useFetch('/api/projects42')
+// const data = await useFetch('/api/projects')
+console.log(projectsData.value)
+console.log(projects42Data.value)
 </script>
 
 <style>

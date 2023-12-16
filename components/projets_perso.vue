@@ -163,7 +163,11 @@
   </div>
 </template>
 
-<script lang="js"></script>
+<script setup>
+const { data: projectsData } = await useFetch('/api/projects')
+
+console.log(projectsData.value)
+</script>
 
 <style>
 ::-webkit-scrollbar {
