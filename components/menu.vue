@@ -8,19 +8,21 @@
         <li>
           <NuxtLink class="nav-link" href="/projects"> projets </NuxtLink>
         </li>
-        <!-- <li>
+        <li>
           <NuxtLink class="nav-link" to="/#contact"> contact </NuxtLink>
-        </li> -->
+        </li>
         <li>
           <a id="cv-btn" :href="cv" download="Cv.pdf"> DOWNLOAD C.V </a>
         </li>
       </ul>
+      <SocialIcons class="social-icons" />
     </nav>
   </div>
 </template>
 
 <script lang="js">
 import { defineComponent } from "vue";
+import social_icons from "./social_icons_link.vue";
 // import cv_component from './cv.vue'
 import cv from "../assets/images/Cv.pdf";
 
@@ -32,6 +34,7 @@ export default defineComponent({
   },
   components: {
     cv,
+    social_icons,
   },
 });
 </script>

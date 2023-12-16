@@ -8,15 +8,6 @@ export default {
       },
     },
   },
-  publicRuntimeConfig: {
-    api_key: process.env.NUXT_API_KEY,
-    auth_domain: process.env.NUXT_AUTH_DOMAIN,
-    project_id: process.env.NUXT_PROJECT_ID,
-    storage_bucket: process.env.NUXT_STORAGE_BUCKET,
-    messaging_sender_id: process.env.NUXT_MESSAGING_SENDER_ID,
-    app_id: process.env.NUXT_APP_ID,
-    measurement_id: process.env.NUXT_MEASUREMENT_ID
-  },
   telemetry: false,
   modules: [
     "@nuxtjs/tailwindcss",
