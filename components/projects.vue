@@ -169,8 +169,13 @@
   </section>
 </template>
 
-<script>
-export default {};
+
+<script setup>
+const { data: projectsData } = await useFetch('/api/projects')
+const { data: projects42Data } = await useFetch('/api/projects42')
+// const data = await useFetch('/api/projects')
+console.log(projectsData.value)
+console.log(projects42Data.value)
 </script>
 
 <style>

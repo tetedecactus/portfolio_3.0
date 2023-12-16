@@ -12,9 +12,9 @@
       <p><span>-</span> développeur web <span>-</span></p>
       <social_icons id="social-icons-mobile" />
     </div>
-    <section class="sub-menu">
+    <div class="sub-menu">
       <submenu />
-    </section>
+    </div>
   </div>
 </template>
 

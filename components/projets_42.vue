@@ -123,7 +123,13 @@
     </div>
   </div>
 </template>
-<script lang="js"></script>
+
+<script setup>
+const { data: projects42Data } = await useFetch('/api/projects42')
+// const data = await useFetch('/api/projects')
+console.log(projects42Data.value)
+
+</script>
 
 <style>
 /* Projects 42 */
