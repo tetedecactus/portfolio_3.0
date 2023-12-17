@@ -1,7 +1,7 @@
 <template>
   <div class="projects-perso-container">
     <h2>Projets Personnel</h2>
-    <div class="links-card">
+    <!-- <div class="links-card">
       <a
         href="https://github.com/tetedecactus/react_bootstrap_portfolio"
         aria-label="Liens vers projet"
@@ -19,7 +19,7 @@
             <p>
               Mon tout premier portfolio représente également l'un de mes
               premiers projets front-end substantiels, arborant un design
-              <span>Dark Razor Wave</span>
+              Dark Razor Wave
               élaboré avec React et Bootstrap. Ce projet marque une étape
               significative dans mon parcours, mettant en avant mes compétences
               croissantes en développement front-end.
@@ -73,9 +73,6 @@
           <video width="150" autoPlay loop muted playsInline>
             <source src="../assets/images/EastClaw.mp4" type="video/mp4" />
             <source src="../assets/images/EastClaw.webm" type="video/webm" />
-            {/*
-            <!-- <source src="../assets/images/EastClaw.ogg" type="video/ogg"> -->
-            */}
           </video>
           <div class="project-description">
             <h3>Site Web Free Lance &nbsp;<span> &#x2192;</span></h3>
@@ -159,12 +156,35 @@
           </div>
         </div>
       </a>
+    </div> -->
+    <div class="links-card" v-for="(project, id) in projectsData.data.value" :key="project">
+      <a
+        href={{ project.data.link }}
+        aria-label="Liens vers projet"
+      >
+        <div class="project-card">
+          <video width="150" autoPlay loop muted playsInline>
+            <source src="../assets/images/cub3d.webm" type="video/webm" />
+          </video>
+          <div class="project-description">
+            <h3>{{ project.data.title }}&nbsp;<span> &#x2192;</span></h3>
+            <p>
+              {{ project.data.description }}
+            </p>
+            <div>
+              <p>C</p>
+              <p>Librairie graphique</p>
+              <p>Algorithme</p>
+            </div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </template>
 
 <script setup>
-const { data: projectsData } = await useFetch('/api/projects')
+const projectsData = await useFetch('/api/personnalProjects')
 
 console.log(projectsData.value)
 </script>

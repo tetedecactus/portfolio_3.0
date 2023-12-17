@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
 import { Request, Response } from 'express';
+import { title } from "process";
 
 // Config Firebase à partir des variables d'environnement
 const firebaseConfig = {
@@ -31,6 +32,7 @@ export default async (req: Request, res: Response) => {
       return {
         id: doc.id,
         data: doc.data(),
+        
       }
     });
     return projects42Data

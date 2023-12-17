@@ -1,7 +1,7 @@
 <template>
   <div class="projects-42-container">
     <h2>Projets 42 Quebec</h2>
-    <div class="links-card">
+    <!-- <div class="links-card">
       <a
         href="https://github.com/tetedecactus/Libft_42"
         aria-label="Liens vers projet"
@@ -120,12 +120,35 @@
           </div>
         </div>
       </a>
+    </div> -->
+    <div class="links-card" v-for="(project, id) in projects42Data.data.value" :key="project">
+      <a
+        href={{ project.data.link }}
+        aria-label="Liens vers projet"
+      >
+        <div class="project-card">
+          <video width="150" autoPlay loop muted playsInline>
+            <source src="../assets/images/cub3d.webm" type="video/webm" />
+          </video>
+          <div class="project-description">
+            <h3>{{ project.data.title }}&nbsp;<span> &#x2192;</span></h3>
+            <p>
+              {{ project.data.description }}
+            </p>
+            <div>
+              <p>C</p>
+              <p>Librairie graphique</p>
+              <p>Algorithme</p>
+            </div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </template>
 
 <script setup>
-const { data: projects42Data } = await useFetch('/api/projects42')
+const projects42Data = await useFetch('/api/projects42')
 // const data = await useFetch('/api/projects')
 console.log(projects42Data.value)
 
