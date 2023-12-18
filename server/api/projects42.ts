@@ -32,7 +32,6 @@ export default async (req: Request, res: Response) => {
       return {
         id: doc.id,
         data: doc.data(),
-        
       }
     });
     return projects42Data
