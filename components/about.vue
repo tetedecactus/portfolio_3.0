@@ -52,7 +52,6 @@ export default defineComponent({
 
   -webkit-animation-name: slide-down;
   -moz-animation-name: slide-down;
-
 }
 
 @-webkit-keyframes slide-down {
@@ -87,7 +86,6 @@ export default defineComponent({
   }
 }
 
-
 @-o-keyframes slide-down {
   0% {
     left: 0;
@@ -109,5 +107,4 @@ export default defineComponent({
     top: 0;
   }
 }
-
 </style>

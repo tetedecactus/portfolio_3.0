@@ -121,11 +121,12 @@
         </div>
       </a>
     </div> -->
-    <div class="links-card" v-for="(project, id) in projects42Data.data.value" :key="project">
-      <a
-        href={{ project.data.link }}
-        aria-label="Liens vers projet"
-      >
+    <div
+      class="links-card"
+      v-for="(project, id) in projects42Data.data.value"
+      :key="project"
+    >
+      <a href="{{" project.data.link }} aria-label="Liens vers projet">
         <div class="project-card">
           <video width="150" autoPlay loop muted playsInline>
             <source src="../assets/images/cub3d.webm" type="video/webm" />
@@ -144,14 +145,30 @@
         </div>
       </a>
     </div>
+    <div>
+    <img v-for="url in imageUrls" :src="url" />
+  </div>
   </div>
 </template>
 
 <script setup>
-const projects42Data = await useFetch('/api/projects42')
-// const data = await useFetch('/api/projects')
-console.log(projects42Data.value)
+const projects42Data = await useFetch("/api/projects42");
+console.log(projects42Data.value);
+</script>
 
+<script>
+import { getImages } from '../server/lib/firebase.ts';
+
+export default {
+  data() {
+    return {
+      imageUrls: [],
+    };
+  },
+  async created() {
+    this.imageUrls = await getImages();
+  },
+};
 </script>
 
 <style>

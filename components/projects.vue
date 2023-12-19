@@ -169,16 +169,15 @@
   </section>
 </template>
 
-
 <script setup>
-const projectsData = await useFetch('/api/personnalProjects')
-const projects42Data = await useFetch('/api/projects42')
+const projectsData = await useFetch("/api/personnalProjects");
+const projects42Data = await useFetch("/api/projects42");
 // const data = await useFetch('/api/projects')
-console.log(projectsData)
-console.log(projects42Data.data.value)
-const data = await useFetch('/api/personnalProjects')
+console.log(projectsData);
+console.log(projects42Data.data.value);
+const data = await useFetch("/api/personnalProjects");
 
-console.log(data.data.value)
+console.log(data.data.value);
 </script>
 
 <style>

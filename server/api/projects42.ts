@@ -1,7 +1,6 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
-import { Request, Response } from 'express';
-import { title } from "process";
+import { getFirestore, collection, getDocs } from "firebase/firestore/lite";
+import { Request, Response } from "express";
 
 // Config Firebase à partir des variables d'environnement
 const firebaseConfig = {
@@ -22,19 +21,19 @@ const db = getFirestore(firebase);
 export default async (req: Request, res: Response) => {
   try {
     // Obtenir une référence à la collection
-    const colRef = collection(db, 'projects42');
-    
+    const colRef = collection(db, "projects42");
+
     // Obtenir les documents de la collection
     const querySnapshot = await getDocs(colRef);
-    
+
     // Transformez les données Firestore en un tableau JavaScript
     const projects42Data = querySnapshot.docs.map((doc) => {
       return {
         id: doc.id,
         data: doc.data(),
-      }
+      };
     });
-    return projects42Data
+    return projects42Data;
 
     // Envoyer les données au client
     res.status(200).json(projects42Data);

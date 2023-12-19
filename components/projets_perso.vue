@@ -157,11 +157,12 @@
         </div>
       </a>
     </div> -->
-    <div class="links-card" v-for="(project, id) in projectsData.data.value" :key="project">
-      <a
-        href={{ project.data.link }}
-        aria-label="Liens vers projet"
-      >
+    <div
+      class="links-card"
+      v-for="(project, id) in projectsData.data.value"
+      :key="project"
+    >
+      <a href="{{" project.data.link }} aria-label="Liens vers projet">
         <div class="project-card">
           <video width="150" autoPlay loop muted playsInline>
             <source src="../assets/images/cub3d.webm" type="video/webm" />
@@ -184,9 +185,9 @@
 </template>
 
 <script setup>
-const projectsData = await useFetch('/api/personnalProjects')
+const projectsData = await useFetch("/api/personnalProjects");
 
-console.log(projectsData.value)
+console.log(projectsData.value);
 </script>
 
 <style>
