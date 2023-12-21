@@ -1,5 +1,11 @@
 import { initializeApp } from "firebase/app";
-import { getStorage, ref, getDownloadURL, listAll, ListResult } from "firebase/storage";
+import {
+  getStorage,
+  ref,
+  getDownloadURL,
+  listAll,
+  ListResult,
+} from "firebase/storage";
 
 const firebaseConfig = {
   apiKey: process.env.VITE_NUXT_API_KEY,
@@ -14,11 +20,10 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-
 // Initialize Cloud Storage and get a reference to the service
 const storage = getStorage(app);
 
-const storageRef = ref(storage, 'gs://portfolionuxt3-96543.appspot.com');
+const storageRef = ref(storage, "gs://portfolionuxt3-96543.appspot.com");
 
 export async function getImages() {
   const urls: string[] = [];
@@ -29,4 +34,3 @@ export async function getImages() {
   });
   return urls;
 }
-

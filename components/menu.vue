@@ -9,6 +9,9 @@
           <NuxtLink class="nav-link" href="/projects"> projets </NuxtLink>
         </li>
         <li>
+          <NuxtLink class="nav-link" href="/contact"> contact </NuxtLink>
+        </li>
+        <li>
           <a id="cv-btn" :href="cv" download="Cv.pdf"> DOWNLOAD C.V </a>
         </li>
       </ul>

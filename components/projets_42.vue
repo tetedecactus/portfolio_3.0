@@ -137,17 +137,18 @@
               {{ project.data.description }}
             </p>
             <div>
-              <p>C</p>
-              <p>Librairie graphique</p>
-              <p>Algorithme</p>
+              <p>{{ project.data.techno[0] }}</p>
+              <p>{{ project.data.techno[1] }}</p>
+              <p>{{ project.data.techno[2] }}</p>
             </div>
           </div>
         </div>
       </a>
     </div>
-    <div>
-    <img v-for="url in imageUrls" :src="url" />
-  </div>
+    // <div>
+    //   <img v-for="url in imageUrls" :src="url" />
+    //   <video v-for="url in imageUrls" :src="url" />
+    // </div>
   </div>
 </template>
 
@@ -157,7 +158,7 @@ console.log(projects42Data.value);
 </script>
 
 <script>
-import { getImages } from '../server/lib/firebase.ts';
+import { getImages } from "../server/lib/firebase.ts";
 
 export default {
   data() {

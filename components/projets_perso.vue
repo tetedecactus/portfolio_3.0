@@ -173,9 +173,10 @@
               {{ project.data.description }}
             </p>
             <div>
-              <p>C</p>
-              <p>Librairie graphique</p>
-              <p>Algorithme</p>
+              <p>{{ project.data.techno[0] }}</p>
+              <p>{{ project.data.techno[1] }}</p>
+              <p>{{ project.data.techno[2] }}</p>
+              <p>{{ project.data.techno[3] }}</p>
             </div>
           </div>
         </div>

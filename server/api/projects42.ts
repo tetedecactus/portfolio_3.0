@@ -27,16 +27,14 @@ export default async (req: Request, res: Response) => {
     const querySnapshot = await getDocs(colRef);
 
     // Transformez les données Firestore en un tableau JavaScript
-    const projects42Data = querySnapshot.docs.map((doc) => {
-      return {
-        id: doc.id,
-        data: doc.data(),
-      };
-    });
+    const projects42Data = querySnapshot.docs.map((doc) => ({
+      id: doc.id,
+      data: doc.data(),
+    }));
     return projects42Data;
 
     // Envoyer les données au client
-    res.status(200).json(projects42Data);
+    // res.status(200).json(projects42Data);
   } catch (error) {
     console.error("Erreur lors de la récupération des documents :", error);
     res.status(500).json({ error: "Internal Server Error" });
