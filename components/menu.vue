@@ -3,7 +3,7 @@
     <nav id="primary_nav">
       <ul>
         <li>
-          <NuxtLink class="nav-link" to="/#about"> à propos </NuxtLink>
+          <NuxtLink class="nav-link" to="/about"> à propos </NuxtLink>
         </li>
         <li>
           <NuxtLink class="nav-link" href="/projects"> projets </NuxtLink>

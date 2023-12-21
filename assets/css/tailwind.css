@@ -304,5 +304,32 @@ body {
   /* -------------------------------------- */
 }
 
-@layer utilities {
-}
+
+/* bout Page --------------------------------------------- */
+.about-page-container {
+    @apply flex;
+    @apply flex-col;
+    @apply w-full;
+  
+  
+  }
+  
+  .about-page-container{
+    /* @apply w-2/3; */
+    @apply md:flex-row;
+  
+  }
+  .about-page-subcontainer {
+    @apply flex flex-col;
+    @apply w-1/3;
+    @apply items-center;
+    /* @apply md:items-start; */
+    @apply pt-24;
+    @apply justify-center;
+  }
+  
+  .about-page-subcontainer h3 {
+    @apply text-[#3F4E4F] text-xl font-bold uppercase;
+    @apply text-center;
+    @apply mb-14;
+  }
