@@ -40,15 +40,15 @@ export default defineComponent({
 <style scoped>
 .about-container {
   position: relative;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   /* padding: 0; */
   animation-name: slide-down;
   animation-duration: 1.5s;
   animation-delay: 2s;
   animation-direction: normal;
-  animation: slide-down 2.5s ease-in-out;
-  -webkit-animation: slide-down 2.5s ease-in-out;
-  -moz-animation: slide-down 2.5s ease-in-out;
+  animation: slide-down 1.5s ease-in-out;
+  -webkit-animation: slide-down 1.5s ease-in-out;
+  -moz-animation: slide-down 1.5s ease-in-out;
 
   -webkit-animation-name: slide-down;
   -moz-animation-name: slide-down;

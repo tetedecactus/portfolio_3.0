@@ -13,7 +13,7 @@ body {
 }
 
 @layer components {
-  /* ------------- Index Page ------------- */
+  /* ------------- Layout Custom ------------- */
   .custom-container {
     @apply w-[100vw] h-[100vh];
     @apply overflow-x-hidden;
@@ -23,9 +23,10 @@ body {
     @apply lg:items-baseline;
   }
   .navbar {
+    @apply relative;
     @apply flex justify-center;
     @apply lg:w-1/2;
-    @apply pt-20;
+    @apply pt-28;
   }
 
   .custom-container .contain {
@@ -35,14 +36,31 @@ body {
     @apply md:w-2/3;
     @apply lg:w-1/2;
   }
-  .contain section {
-    @apply flex;
-    @apply pt-20;
+  /* ------------- Layout Custom ------------- */
+  .custom-layout-container {
+    @apply fixed;
+    @apply w-[100vw] h-[100vh];
+    @apply overflow-x-hidden;
+    @apply flex flex-col;
+    @apply lg:flex-row;
+    @apply items-center;
+    @apply lg:items-baseline;
+  }
+  .custom-layout-navbar {
+    @apply relative;
+    @apply flex justify-center;
+    @apply lg:w-1/6;
+    /* @apply pt-20; */
+  }
+
+  .custom-layout-contain {
+    @apply flex flex-col;
+    @apply justify-normal;
+    @apply w-4/5;
   }
   /* -------------------------------------- */
   /* ---------- NavBar Component ---------- */
   .navbar-container {
-    @apply w-1/2;
     @apply flex;
     @apply flex-row;
     @apply lg:flex-col;
@@ -51,13 +69,12 @@ body {
     @apply justify-center;
   }
   .title-container {
-    @apply lg:pl-40;
-    @apply lg:mb-12;
+    @apply lg:pl-24;
+    /* @apply lg:mb-12; */
   }
   .title-portfolio {
     @apply text-[rgb(220,215,201)] text-5xl font-bold;
     @apply cursor-pointer;
-
     @apply mb-2;
   }
   .title-portfolio span {
@@ -85,7 +102,8 @@ body {
     @apply mt-10;
     @apply sm:flex;
     @apply sm:flex-col;
-    @apply pl-20;
+    @apply items-center;
+    /* @apply pl-20; */
   }
   /* -------------------------------------- */
   /* ----------- Menu Component ----------- */
@@ -151,6 +169,7 @@ body {
     @apply md:items-start;
     @apply lg:w-5/6;
     @apply xl:w-4/6;
+    @apply pt-28;
   }
   .projects-container h2 {
     @apply text-[#3F4E4F] text-xl font-bold uppercase;
@@ -240,66 +259,46 @@ body {
     @apply flex-col;
     @apply lg:flex-row;
     @apply items-start;
-    @apply mt-10;
-    /* @apply md:mt-; */
-    /* @apply lg:mt-12; */
+    @apply mt-10 ml-8;
+    @apply lg:mt-12;
   }
 
-  .navbar-projects {
-    @apply flex justify-center;
-    @apply w-full;
-    @apply lg:w-1/2;
-    @apply xl:w-1/3;
-    @apply 2xl:w-1/4;
-    @apply pt-24;
-  }
-
-  .projects-page-subcontainer {
-    @apply flex flex-col;
-    @apply 2xl:flex-row;
-    @apply w-full;
-    @apply lg:w-5/6;
-    @apply xl:w-4/6;
-    @apply items-center;
-    @apply md:items-start;
-    @apply pt-24;
-    @apply justify-center;
-  }
   .links-card {
-    @apply w-9/12;
+    @apply w-10/12;
+    @apply justify-center;
     @apply flex items-center;
     /* @apply md:ml-14; remplace justify-center marche pas ?? */
   }
 
   .projects-perso-container {
-    @apply w-[100vw] h-[100vh];
     @apply flex flex-col;
-    @apply items-center;
-    @apply sm:w-full h-full;
-    @apply sm:mb-24;
-    @apply 2xl:mb-0;
+    @apply justify-center items-center;
+    @apply w-1/2;
+    /* @apply items-center; */
+    /* @apply sm:mb-24; */
+    /* @apply 2xl:mb-0; */
   }
   .projects-perso-container h2 {
     @apply text-[#3F4E4F] text-xl font-bold uppercase;
     @apply text-center;
-    @apply mb-14;
+    @apply mb-8 mt-10;
   }
 
   .projects-42-container {
     @apply flex flex-col;
-    @apply justify-end;
+    @apply justify-center items-center;
     @apply items-center;
-    @apply sm:w-full h-full;
     @apply lg:mb-24;
     @apply 2xl:mb-0;
-    /* @apply justify-center; */
+    @apply justify-center;
+    @apply w-1/2;
   }
 
   .projects-42-container h2 {
     @apply sm:items-center;
     @apply text-[#3F4E4F] text-xl font-bold uppercase;
     @apply text-center;
-    @apply mb-14;
+    @apply mb-8 mt-10;
   }
   /* -------------------------------------- */
 }
@@ -310,14 +309,11 @@ body {
     @apply flex;
     @apply flex-col;
     @apply w-full;
-  
-  
   }
   
   .about-page-container{
     /* @apply w-2/3; */
     @apply md:flex-row;
-  
   }
   .about-page-subcontainer {
     @apply flex flex-col;

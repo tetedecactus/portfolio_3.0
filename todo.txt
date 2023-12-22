@@ -1,5 +1,3 @@
-Complete les description de projet 42 manquant
 Ajouter dans la DB un attribut pour check les image/video des projets
-Chek probleme des liens de la DB
-Check pour mettre le NavBar dans Layout
+ajouter contact form NEtlify
 Cleaner le code

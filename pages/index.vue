@@ -6,11 +6,8 @@
     </Head>
     <!-- -->
   </div>
-  <div class="custom-container">
-    <div class="navbar" id="menu">
-      <navbar />
-    </div>
-    <div class="contain">
+  <div class="">
+    <div class="">
       <div id="about">
         <about />
       </div>
@@ -33,6 +30,10 @@ export default defineComponent({
     about,
     projects,
   },
+});
+
+definePageMeta({
+  layout: "default",
 });
 </script>
 

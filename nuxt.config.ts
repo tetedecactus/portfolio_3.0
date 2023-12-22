@@ -1,5 +1,5 @@
 export default {
-  buildModules: ["@nuxtjs/dotenv"],
+  buildModules: ["@nuxtjs/dotenv", "nuxt-windicss"],
   build: {
     postcss: {
       plugins: {

@@ -1,12 +1,12 @@
-<!-- Layout For Index Page -->
+<!-- Layout For About, Projects & Contact Page -->
 
 <template>
   <div class="overflow-hidden">
-    <main class="custom-container">
-      <div class="navbar" id="menu">
+    <main class="custom-layout-container">
+      <div class="custom-layout-navbar" id="menu">
         <navbar />
       </div>
-      <div class="contain">
+      <div class="custom-layout-contain">
         <slot />
       </div>
     </main>
